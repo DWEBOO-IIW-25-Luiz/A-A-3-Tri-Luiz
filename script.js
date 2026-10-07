@@ -1,9 +1,4 @@
-/* 
-let valor1 = prompt("Por favor, digite o primeiro número para fazermos uma equação: ");
-let valor2 =  prompt("Por favor, digite o segundo número para fazermos uma equação: ");
-let equacao =  prompt("Por favor, digite o qual o tipo de equação (-, + , *, /) ");
-console.log(fazerEquacoes(valor1,valor2,equacao)); 
- */
+
 // const nome= "Nomezinho"; não pode ser reatribuída
 // let contador= 0; - o valor pode ser alterado
 // var antigo= "evite"; forma antiga
