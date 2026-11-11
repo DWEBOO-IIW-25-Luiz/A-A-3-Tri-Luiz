@@ -11,3 +11,5 @@ const texto = `O ${nome}, mora em ${cidade} e tem ${idade} anos`;
 
 console.log(texto);
 div.textContent = texto;
+
+div.style.color = "red";

@@ -32,7 +32,7 @@ console.log(textoAprovacao);
 
 const div = document.getElementById("saida");
 div.textContent = textoAprovacao;
-div.style.color = "white";
+div.style.color = "red";
 
 const teste = document.getElementById("teste");
 teste.textContent = texto;
