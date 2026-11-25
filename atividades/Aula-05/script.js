@@ -197,4 +197,82 @@ do {
   nota = Number(prompt("DIGITE UM NÚMERO DE 1 a 10 : "));
 } while (Number.isNaN(nota) || nota < 0 || nota > 10);
 console.log(`${nota}- número válido`);
- */
+
+//ex10
+for (let i = 0; i <=1000; i++) {
+ if (i%7===0 && i%2 === 0) {
+   console.log(`${i} é múltiplo de sete, e  par!`)
+ }
+} 
+let i=0
+while (i<=1000) {
+   if (i%7===0 && i%2 === 0) {
+   console.log(`${i} é múltiplo de sete, e  par!`)
+ }
+  i++
+}
+  //EX11
+let total=0;
+while (true) {
+  const entrada=prompt('Valor do item (ou "fim" para encerrar : )');
+  if (entrada === 'fim' || entrada === null) {
+    break;
+  }
+  total+=Number(entrada);
+}
+console.log('Total da compra', total.toFixed(2));
+
+//EX 12
+for(let tabuada=1;tabuada<=10;tabuada++){
+  console.log(`------------------Tabuada do número ${tabuada} : -------------------------`);
+  for(let x=1; x<=10; x++ ){
+    console.log(`${tabuada} X ${x}=${tabuada*x}`)
+  }
+
+}
+
+// exemplo 19
+for (let linha = 0; linha < 10; linha++) {
+  let desenho = "\n";
+  for (let col = 0; col < linha; col++) {
+    desenho += "*";
+  }
+  console.log(desenho);
+}
+
+//exercio 937
+const qtdAluno = Number(prompt("Quanto alunos em sala de aula?"));
+let soma = 0;
+let maior = -Infinity;
+let menor = Infinity;
+let aprovados = 0;
+for (let j = 1; j < qtdAluno; j++) {
+  const nota = Number(prompt(`Qual foi a nota do aluno ${j}?`));
+
+  soma += nota;
+  if (nota > maior) maior = nota;
+  if (nota < menor) menor = nota;
+  if (nota >= 60) aprovados++;
+}
+console.log(`Média Geral : ${(soma / qtdAluno).toFixed(1)}`);
+console.log(`Maior nota : ${maior} || Menor nota :${menor}`);
+console.log(`Número de aprovados : ${aprovados}`);
+   */
+//exercicio
+alert("Jogo do Adivinho dos números 1 a 10");
+ let tentativas=Number(prompt("Quantas tentivas você quer ?  "));
+ let i=1;
+ let valorUsuario=Number(prompt("Insira o número de 1 a 10 : "));
+
+
+let num=Math.floor(Math.random() *10) +1;
+while(valorUsuario !== num && tentativas > i ) {
+
+  valorUsuario=Number(prompt("Tente novamente, 1 a 10 : "));
+    i++;
+}
+if (valorUsuario=== num) {
+  alert(`Parabéns vc acerto o numero : ${num}. Em ${i} tentativas!`);
+}else{
+  alert(`Perdeu! era o número : ${num}`);
+}
